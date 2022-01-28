@@ -33,8 +33,11 @@ jobs:
           echo Add other actions to build,
           echo test, and deploy your project.
       - name: compile
-        run: gcc -o hello src/hello.c
+        run: gcc -o /release/hello src/hello.c
 
+      - name: List files
+        run: ls -aliR
+        
       - uses: actions/upload-artifact@v2
         with:
           name: my-artifact
