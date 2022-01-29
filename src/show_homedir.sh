@@ -1,1 +1,1 @@
-echo $HOME_DIR
+echo $GITHUB_WORKSPACE
